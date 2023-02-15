@@ -1,4 +1,4 @@
-import "./topbar.css";
+import "./topbar.scss";
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import MessageRoundedIcon from '@mui/icons-material/MessageRounded';
