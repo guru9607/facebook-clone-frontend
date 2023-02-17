@@ -7,6 +7,8 @@ import HelpOutlineRoundedIcon from '@mui/icons-material/HelpOutlineRounded';
 import WorkOutlineRoundedIcon from '@mui/icons-material/WorkOutlineRounded';
 import EventRoundedIcon from '@mui/icons-material/EventRounded';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Leftbar() {
   return (
@@ -49,22 +51,9 @@ export default function Leftbar() {
         <button className="leftbarButton">Show More</button>
         <hr className="leftbarHr" />
         <ul className="leftbarFriendList">
-          <li className="leftbarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="leftbarFriendImg" />
-            <span className="leftbarFriendName">Gotya</span>
-          </li>
-          <li className="leftbarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="leftbarFriendImg" />
-            <span className="leftbarFriendName">Gotya</span>
-          </li>
-          <li className="leftbarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="leftbarFriendImg" />
-            <span className="leftbarFriendName">Gotya</span>
-          </li>
-          <li className="leftbarFriend">
-            <img src="/assets/person/2.jpeg" alt="" className="leftbarFriendImg" />
-            <span className="leftbarFriendName">Gotya</span>
-          </li>
+          {Users.map(u => (
+            <CloseFriend  key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
