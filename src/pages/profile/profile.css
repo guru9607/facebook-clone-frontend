@@ -40,3 +40,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.profileInfoName{
+  font-size: 24px;
+}
+
+.profileInfoDesc{
+  font-weight: 300;
+}
